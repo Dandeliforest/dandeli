@@ -1,0 +1,154 @@
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "Flama-Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Flama-Bold"), url("../public/fonts/Flama-Bold.woff") format("woff");
+  }
+
+
+@font-face {
+    font-family: "Flama";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Flama"), url("../public/fonts/Flama\ Regular.woff") format("woff");
+  }
+
+
+h2{
+    font-size: 2.2rem;
+    font-family: 'Flama-Bold';
+    font-weight: 700!important;
+    letter-spacing: .01rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Flama';
+    font-weight: 500;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .contact-details {
+      img.contact-us {
+        width: 60%;
+        @media (max-width: 576px) {
+          width: 80%;
+        }
+      }
+      @media (max-width: 576px) {
+        text-align: center !important;
+      }
+      .contact-us {
+        text-align: left;
+        color: black;
+        font-size: 0.9rem;
+        font-family: 'Flama';
+        font-weight: bold;
+        @media (max-width: 576px) {
+          text-align: center !important;
+        }
+        p {
+          font-size: 0.9rem;
+          font-family: 'Flama';
+          font-weight: bold;
+        }
+      }
+    }
+    h1.footer-text {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .form-control {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      box-shadow: none;
+      border-radius: 0;
+      border-bottom: 1px black solid;
+    }
+    .form-control:focus {
+      outline: none !important;
+      border-bottom: 2px rgb(53, 52, 52) solid;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+    label {
+      font-size: 0.8rem;
+      font-family: 'Flama';
+      color: black;
+      margin-top: 10px;
+    }
+    .contact-detail {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    .menu-link {
+      text-align: right;
+      .nav-link {
+        color: black;
+        font-family: 'Flama';
+        font-size: 0.9rem;
+        font-weight: normal;
+      }
+    }
+   
+    .social-icons {
+      a.fa {
+        float: right;
+        padding: 5px 10px;
+        background: #132c0f;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 5px;
+        border-radius: 5px;
+      }
+      a.fa:hover {
+        background: white;
+        color:#132c0f;
+      }
+    }
+    .button {
+      background: #132c0f;
+      border: 2px solid #132c0f !important;
+      &:hover{
+        background: white;
+        color: #132c0f;
+      }
+    }
+
+  }
+
+  nav.navbar-dark.bg-dark {
+      position: fixed;
+      background: #132c0f !important;
+    font-family: 'Flama';
+    z-index: 50;
+    top: 0;
+    width: 100% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+    .navbar-collapse {
+      justify-content: flex-end !important;
+    }
+    .nav-link {
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      color: #ffffff;
+      padding-left: 30px;
+      @media (max-width: 576px) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  
